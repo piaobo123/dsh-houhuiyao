@@ -19,6 +19,9 @@
 （webServer / agents / sessionQuery / workspaceRegistry / agentDefaultModel / agentPresets），
 不改 harness 一行源码。「不重新生成」那一项需要宿主侧一条同源受限的 HTTP 路由（`lib/index.js`）。
 
+
+> 备份仓库：[piaobo123/dsh-houhuiyao](https://github.com/piaobo123/dsh-houhuiyao)（公开源码备份；本机实际安装的是 `F:\dsh-plugins\dsh-houhuiyao`）。
+
 ---
 
 ## v0.2.0（2026-10-01）改了什么
