@@ -1,0 +1,5 @@
+# dsh-houhuiyao bundle patch layer —— 把本插件挂载进 profile 树。
+# 一行 row，id 与 name 都是包名（拼音 houhuiyao = 后悔药）。
+- insert:
+    - id: dsh-houhuiyao
+      name: dsh-houhuiyao

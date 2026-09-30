@@ -1,0 +1,47 @@
+{
+  "name": "dsh-houhuiyao",
+  "version": "0.3.0",
+  "private": true,
+  "description": "DSH Web GUI 回复版本插件（拼音 houhuiyao = 后悔药）：最后一条回答上的「↻ 重新生成 / ✏️ 编辑提问 / 🗑 删除这轮 / ‹ i/N › 版本翻页器」。判据由宿主读全量日志（不受客户端 50 条窗口裁剪影响），零核心补丁。Reply-version pager for the DeepSeek Harness Web GUI.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./client/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "client",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "client-plugin",
+    "web",
+    "ui",
+    "regenerate",
+    "version",
+    "pager",
+    "houhuiyao",
+    "版本",
+    "重新生成"
+  ],
+  "license": "MIT",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-chat",
+        "@deepseek-ai/dsh-client-ui-workspace",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-api-workspace-controller"
+      ]
+    }
+  }
+}
